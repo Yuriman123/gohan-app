@@ -4808,7 +4808,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .jumbotron {
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   margin-bottom: 2rem;
   background-color: #e9ecef;
   border-radius: 0.3rem;
@@ -10176,7 +10176,7 @@ header.masthead h1 {
 }
 
 .jumbotron { background:url(bg-mastheada.jpg);
-  height: 400px;
+  height: 300px;
   background-size:cover;
 }
 
@@ -10204,4 +10204,12 @@ header.masthead h1 {
 }
 .titlefont{
   text-align: center;
+}
+
+.texts-warning {
+  color:black !important;
+}
+
+.form-styl{
+  margin: 10px 0px 20px 0px;
 }
