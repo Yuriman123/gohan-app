@@ -6,10 +6,35 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %> 
+    <%=link_to 'ランチシェア',root_path, class:"dezin" %> 
+
+      <div class="example">
+        <div class="h3">
+        <div class="devic">
+        <%=link_to '■Profil',"#", class:"dezin" %> </div>
+        <%=link_to '■Profil',"#", class:"dezin" %>  
+        <%=link_to '■Profil',"#", class:"dezin" %> 
+        
+        </div> 
+     </div>
+     
+ <header class="jumbotron">
+ 　　<div class="titlefont">
+ 　　　<h1 class="text-warning  root-Meiryo"> 今日は何食べる？</h1> 
+      <p class="text-white-75  font-weight-light mb-5">毎日のレシピをシェアしよう</p>
+      <%= link_to '投稿する', "#", class:"sendcoler" %>
+    </div>
+
+ </header>  
   </head>
 
   <body>
     <%= yield %>
+   <footer class="bg-light py-5">
+    <div class="small text-center text-muted">
+  　　　Copyright &copy;2021
+    </div>
+  </footer>
   </body>
 </html>
