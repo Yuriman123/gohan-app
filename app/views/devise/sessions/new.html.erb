@@ -1,14 +1,8 @@
 <div class="titlefont">
 
-<h3 class="texts-warning">新規登録</h3>
+<h3 class="texts-warning">ログイン</h3>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-<div class="form-styl">
- <div class="field">
-    <%= f.label :ニックネーム（必須） %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
-</div>
 
 <div class="form-styl">
   <div class="field">
@@ -24,12 +18,6 @@
   </div>
 </div>
 
-<div class="form-styl">
-    <div class="field">
-    <%= f.label :確認用パスワード（必須） %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
-  </div>
-</div>
 
 
   <div class="actions">

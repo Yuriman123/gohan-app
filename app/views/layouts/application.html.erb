@@ -7,22 +7,33 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %> 
-    <%=link_to 'ランチシェア',root_path, class:"dezin" %> 
+   <div class="yoko-styl">
+         <%= image_tag "chawan.png", class:"google-btn" %>
+          <h4><%=link_to 'ランチシェア',root_path, class:"dezin" %> </h4>
 
-      <div class="example">
+        <div class="example">
         <div class="h3">
-        <div class="devic">
-        <%=link_to '■Profil',"#", class:"dezin" %> </div>
-        <%=link_to '■Login',new_user_session_path, class:"dezin" %>  
-        <%=link_to '■Logout',"#", class:"dezin" %> 
-        
-        </div> 
+        <div class="devic"> 
+
+        <%=link_to 'Profile',"#", class:"dezin" %> </div>
+          <% if current_user.id %> 
+              <%=link_to 'ログアウト',"#", class:"dezin" %> 
+          <% else %> 
+              <%=link_to 'ログイン',"#", class:"dezin" %> 
+              <%=link_to '新規登録', new_user_registration_path, class:"dezin" %>  
+          <%end%>
+        </div>
+       </div>
+      </div> 
      </div>
      
  <header class="jumbotron">
  　　<div class="titlefont">
  　　　<h1 class="text-warning  root-Meiryo"> 今日は何食べる？</h1> 
-      <p class="text-white-75  font-weight-light mb-5">毎日のレシピをシェアしよう</p>
+     <% if current_user.id %> 
+      <div class="text-white-75">こんにちは、 <%= link_to "#{current_user.nickname}さん",class:"text-white-75"%> 
+        <p class="text-white-75  font-weight-light mb-5">毎日のレシピをシェアしよう</p>
+      <%end%>
       <%= link_to '投稿する', "#", class:"sendcoler" %>
     </div>
 

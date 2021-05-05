@@ -357,13 +357,13 @@ template {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0rem;
   font-family: "Helvetica Neue", Helvetica, Arial, "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, 'Open Sans', sans-serif;  font-weight: 500;
   line-height: 1.2;
 }
 
 h1, .h1 {
-  font-size: 2.5rem;
+  font-size: 2.rem;
 }
 
 h2, .h2 {
@@ -10176,7 +10176,7 @@ header.masthead h1 {
 }
 
 .jumbotron { background:url(bg-mastheada.jpg);
-  height: 300px;
+  height: 350px;
   background-size:cover;
 }
 
@@ -10190,26 +10190,31 @@ header.masthead h1 {
 
 .dezina{
   display: inline-block;
+  display: flex;
   color: #000;
   text-decoration: none;
-  display: flex;
   flex-direction: column;
-  margin: 0x 200px; 
   margin: 0px 0px 0px 90%;
 }
 
 .devic{
+  font-family: "メイリオ";
   display: inline-block;   
-  margin: 0px 0px 0px 60%;
+  margin: 0px 10px 0px 60vw;
 }
 .titlefont{
   text-align: center;
 }
-
 .texts-warning {
   color:black !important;
 }
+.yoko-styl{
+  display: flex;
+}
+.sukima{
+  margin: 5px 10px 0px 10px;
+}
 
-.form-styl{
-  margin: 10px 0px 20px 0px;
+.google-btn {
+  height: 30px;
 }
