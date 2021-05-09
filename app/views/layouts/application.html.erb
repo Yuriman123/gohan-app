@@ -22,7 +22,7 @@
               <%=link_to 'ログアウト',destroy_user_session_path, method: :delete, class:"dezin" %> </div></p>
           <% else %> 
              <p class="font-a">
-              <%=link_to 'ログイン',"#", class:"dezin" %> </p>
+              <%=link_to 'ログイン',user_session_path, class:"dezin" %> </p>
             <p class="font-a">
               <%=link_to '新規登録', new_user_registration_path, class:"dezin" %>  </p>
           <%end%>
