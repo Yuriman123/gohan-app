@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 abbr[title],
@@ -4664,7 +4664,8 @@ input[type=button].btn-block {
 }
 .pagination-sm .page-item:last-child .page-link {
   border-top-right-radius: 0.2rem;
-  border-bottom-right-radius: 0.2rem;
+  border-bottom-right-radius: 0.
+  2rem;
 }
 
 .badge {
@@ -10184,7 +10185,7 @@ header.masthead h1 {
   color: #000;
   text-decoration: none;
   flex-direction: column;
-  margin: 0x 200px; 
+  margin: 10px 10px 30px 10px; 
   list-style: none;
 }
 
@@ -10198,7 +10199,6 @@ header.masthead h1 {
 }
 
 .devic{
-  font-family: "メイリオ";
   display: inline-block;   
   margin: 0px 10px 0px 60vw;
 }
@@ -10217,4 +10217,8 @@ header.masthead h1 {
 
 .google-btn {
   height: 30px;
+}
+
+.font-a{
+font-family: 'Kiwi Maru', serif;
 }

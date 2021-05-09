@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+
     <title>GohanApp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -9,18 +12,19 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %> 
    <div class="yoko-styl">
          <%= image_tag "chawan.png", class:"google-btn" %>
-          <h4><%=link_to 'ランチシェア',root_path, class:"dezin" %> </h4>
+         <div class="font-a"> <h5><%=link_to '今日は何食べる？',root_path, class:"dezin" %> </h5></div>
 
-        <div class="example">
+    <div class="example">
         <div class="h3">
-        <div class="devic"> 
-
-        <%=link_to 'Profile',"#", class:"dezin" %> </div>
-          <% if current_user.id %> 
-              <%=link_to 'ログアウト',"#", class:"dezin" %> 
+          <div class="devic"> 
+          <% if current_user %> 
+             <p class="font-a">
+              <%=link_to 'ログアウト',destroy_user_session_path, method: :delete, class:"dezin" %> </div></p>
           <% else %> 
-              <%=link_to 'ログイン',"#", class:"dezin" %> 
-              <%=link_to '新規登録', new_user_registration_path, class:"dezin" %>  
+             <p class="font-a">
+              <%=link_to 'ログイン',"#", class:"dezin" %> </p>
+            <p class="font-a">
+              <%=link_to '新規登録', new_user_registration_path, class:"dezin" %>  </p>
           <%end%>
         </div>
        </div>
@@ -29,11 +33,14 @@
      
  <header class="jumbotron">
  　　<div class="titlefont">
+      <p class="font-a">
  　　　<h1 class="text-warning  root-Meiryo"> 今日は何食べる？</h1> 
-     <% if current_user.id %> 
-      <div class="text-white-75">こんにちは、 <%= link_to "#{current_user.nickname}さん",class:"text-white-75"%> 
-        <p class="text-white-75  font-weight-light mb-5">毎日のレシピをシェアしよう</p>
+      </p>
+      <% if current_user %> 
+      <div class="text-white-75">こんにちは、 <%= current_user.nickname %>   さん
       <%end%>
+        <p class="text-white-75  font-weight-light mb-5">毎日のレシピをシェアしよう</p>
+      
       <%= link_to '投稿する', "#", class:"sendcoler" %>
     </div>
 
@@ -41,6 +48,7 @@
   </head>
 
   <body>
+
     <%= yield %>
    <footer class="bg-light py-5">
     <div class="small text-center text-muted">
