@@ -14,8 +14,7 @@
          <%= image_tag "chawan.png", class:"google-btn" %>
          <div class="font-a"> <h5><%=link_to '今日は何食べる？',root_path, class:"dezin" %> </h5></div>
 
-    <div class="example">
-        <div class="h3">
+        <div class="h5">
           <div class="devic"> 
           <% if current_user %> 
              <p class="font-a">
@@ -26,25 +25,10 @@
             <p class="font-a">
               <%=link_to '新規登録', new_user_registration_path, class:"dezin" %>  </p>
           <%end%>
-        </div>
        </div>
       </div> 
      </div>
      
- <header class="jumbotron">
- 　　<div class="titlefont">
-      <p class="font-a">
- 　　　<h1 class="text-warning  root-Meiryo"> 今日は何食べる？</h1> 
-      </p>
-      <% if current_user %> 
-      <div class="text-white-75">こんにちは、 <%= current_user.nickname %>   さん
-      <%end%>
-        <p class="text-white-75  font-weight-light mb-5">毎日のレシピをシェアしよう</p>
-      
-      <%= link_to '投稿する', "#", class:"sendcoler" %>
-    </div>
-
- </header>  
   </head>
 
   <body>
