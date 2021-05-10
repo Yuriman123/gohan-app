@@ -10,7 +10,7 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %> 
-   <div class="yoko-styl">
+    <div class="yoko-styl">
          <%= image_tag "chawan.png", class:"google-btn" %>
          <div class="font-a"> <h5><%=link_to 'GOHAN',root_path, class:"dezin" %> </h5></div>
 
@@ -32,13 +32,10 @@
   </head>
 
   <body>
-
     <%= yield %>
-    <center>
-   <footer class="bg-light py-5">
-    <div class="small text-center text-muted">
+  
+   <footer>
      Copyright &copy;2021
-    </div>
   </footer>
   </body>
 </html>

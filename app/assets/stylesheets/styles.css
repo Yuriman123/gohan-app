@@ -57,11 +57,6 @@
 font-family: 'Kiwi Maru', serif;
 }
 
-div.main {
-  margin: 20vh;
-  text-align: center; 
-  }
-
   .buttona {
     text-decoration: none;
     display       : inline-block;
@@ -105,16 +100,80 @@ div.main {
   }
 
   .buy-item-img {
+    margin: 20px auto;
     margin-right: 20px;
-    height: 150px;
-    width: 250px;
+    height: 175px;
+    width: 300px;
     object-fit: contain;
   }
 
-  div.grid {
+  .grid {
     display: grid;
     gap: 26px;
     grid-template-columns: repeat(3, 1fr);
     margin-top: 6%;
     margin-bottom: 50px;
   }
+  .main {
+    margin: 8vh;
+    text-align: center; 
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 10px; */
+  }
+  .titl-font{
+  size: 8px;
+  }
+
+  .font-cloer{
+    color: rgb(180, 93, 22);
+  }
+
+  footer{
+    margin: 20px;
+    width: 100vw;
+    height: 40px;
+    background-color: #da8506;
+    color: #fff;
+    text-align: center;
+    bottom: 0; 
+}
+
+.wrapper{
+  min-height: 100vh;
+  position: relative;/*←相対位置*/
+  padding-bottom: 120px;/*←footerの高さ*/
+  box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+}
+
+.card {
+  margin: 25px auto;
+  width: 300px;
+  background: rgb(238, 229, 211);
+  border-radius: 5px;
+}
+
+.card-content {
+  padding: 20px;
+}
+.card-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+.card-text {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.card-link {
+  text-align: center;
+  border-top: 1px solid #eee;
+  padding: 20px;
+}
+.card-link a {
+  text-decoration: none;
+  color: #0bd;
+  margin: 0 10px;
+}
