@@ -1,1 +1,16 @@
+ <header class="jumbotron">
+    <div class="titlefont">
+      <p class="font-a">
+      <h1 class="text-warning  root-Meiryo"> 今日は何食べる？</h1> </p>
+      <% if current_user %> 
+      <div class="text-white-75">こんにちは、 <%= current_user.nickname %>   さん
+      <%end%>
+        <p class="text-white-75  font-weight-light mb-5">毎日のレシピをシェアしよう</p>
+         <%= link_to '投稿する', new_tweet_path, class:"sendcoler" %>
+    </div>
+
+ </header>  
+
+
+
 <h1>ここに画像を表示</h1>
