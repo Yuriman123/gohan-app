@@ -3,8 +3,8 @@
 <%= form_with model: @tweet, local: true do |f|%>
 
   <div class="field">
-  <i class="fas fa-camera"></i>
-    <%= f.label :image, "写真",class: :buttonb %><br />
+  <h3><i class="fas fa-camera"></i>
+    <%= f.label :image, "写真"%></h3><br />
     <%= f.file_field :image,class: :image_form %>
   </div>
 
