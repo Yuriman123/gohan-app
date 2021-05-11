@@ -1,1 +1,6 @@
-      <%= render partial: "form",locals:{ tweet: @tweet}%>
+      <%= render partial: "hedaer",locals:{ tweet: @tweet}%>
+      <div class="card-title">
+        <div class="center">
+            <%= render partial: "form",locals:{ tweet: @tweet}%>
+       </div>
+      </div>

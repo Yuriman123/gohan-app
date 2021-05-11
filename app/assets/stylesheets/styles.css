@@ -1,3 +1,7 @@
+header{
+  padding-top: 3% 3%;
+}
+
 .font_test {
   font-size: 40px;    /* 文字サイズ指定 */
   color: #ee9052ea;     /* 文字色指定 */
@@ -16,25 +20,29 @@
 }
 
 .dezin{
-  color: #000;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   flex-direction: column;
   margin: 10px 10px 30px 10px; 
   list-style: none;
 }
-
-.dezina{
-  display: inline-block;
-  display: flex;
-  color: #000;
+.dezin-a{
+  color: rgb(255, 255, 255);
+  font-size: 20px;
   text-decoration: none;
   flex-direction: column;
-  margin: 0px 0px 0px 90%;
+  margin: 10px 10px 10px 0px; 
+  list-style: none;
+}
+
+.img-a{
+  width: 25px;
+  height: 25px;
 }
 
 .devic{
   display: inline-block;   
-  margin: 0px 10px 0px 60vw;
+  margin: 0px 10px 0px 90vw;
 }
 .titlefont{
   text-align: center;
@@ -43,7 +51,10 @@
   color:black !important;
 }
 .yoko-styl{
-  display: flex;
+  float: left;
+  display: inline-block;
+  vertical-align: top;
+  height: 10px;
 }
 .sukima{
   margin: 5px 10px 0px 10px;
@@ -100,7 +111,7 @@ font-family: 'Kiwi Maru', serif;
   }
 
   .buy-item-img {
-    margin: 20px auto;
+    margin: 10px auto;
     margin-right: 20px;
     height: 175px;
     width: 300px;
@@ -115,8 +126,8 @@ font-family: 'Kiwi Maru', serif;
     margin-bottom: 50px;
   }
   .main {
-    margin: 8vh;
     text-align: center; 
+    margin: 10px 42%;
     display: flex;
     flex-wrap: wrap;
     /* padding: 10px; */
@@ -124,7 +135,6 @@ font-family: 'Kiwi Maru', serif;
   .titl-font{
   size: 8px;
   }
-
   .font-cloer{
     color: rgb(180, 93, 22);
   }
@@ -133,8 +143,7 @@ font-family: 'Kiwi Maru', serif;
     margin: 20px;
     width: 100vw;
     height: 40px;
-    background-color: #da8506;
-    color: #fff;
+    color: rgb(110, 65, 62);
     text-align: center;
     bottom: 0; 
 }
@@ -149,31 +158,39 @@ font-family: 'Kiwi Maru', serif;
 .card {
   margin: 25px auto;
   width: 300px;
-  background: rgb(238, 229, 211);
-  border-radius: 5px;
+  background: rgb(240, 227, 220);
+  border-radius: 30px;
 }
 
 .card-content {
-  padding: 20px;
 }
 .card-title {
+  margin-top: 0px;
   font-size: 20px;
-  margin-bottom: 20px;
   text-align: center;
   color: #333;
 }
 .card-text {
   color: #777;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 0.1;
 }
 .card-link {
   text-align: center;
   border-top: 1px solid #eee;
-  padding: 20px;
+  padding: 10px;
 }
 .card-link a {
   text-decoration: none;
   color: #0bd;
   margin: 0 10px;
 }
+
+.short{
+default: "%Y/%mm/%d %H:%M:%S";
+}
+
+.top-card{
+  margin: 15px;
+}
+

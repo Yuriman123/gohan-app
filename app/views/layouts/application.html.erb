@@ -2,30 +2,29 @@
 <html>
   <head>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
 
     <title>GohanApp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %> 
     <div class="yoko-styl">
-         <%= image_tag "chawan.png", class:"google-btn" %>
-         <div class="font-a"> <h5><%=link_to 'GOHAN',root_path, class:"dezin" %> </h5></div>
+    
 
-        <div class="h5">
           <div class="devic"> 
+         <h5><%= image_tag "chawan.png", class:"img-a" %> <%=link_to 'GOHAN',root_path, class:"dezin-a" %> </h5>
+
           <% if current_user %> 
              <p class="font-a">
-              <%=link_to 'ログアウト',destroy_user_session_path, method: :delete, class:"dezin" %> </div></p>
+              <%=link_to 'ログアウト', destroy_user_session_path, method: :delete, class:"dezin" %> </div></p>
           <% else %> 
-             <p class="font-a">
-              <%=link_to 'ログイン',user_session_path, class:"dezin" %> </p>
-            <p class="font-a">
-              <%=link_to '新規登録', new_user_registration_path, class:"dezin" %>  </p>
+               <p class="font-a">
+                <%=link_to 'ログイン', user_session_path, class:"dezin" %> </p>
+               <p class="font-a">
+               <%=link_to '新規登録', new_user_registration_path, class:"dezin" %>  </p>
           <%end%>
-       </div>
+      </div>
       </div> 
      </div>
      
