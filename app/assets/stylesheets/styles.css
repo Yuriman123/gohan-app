@@ -126,12 +126,20 @@ font-family: 'Kiwi Maru', serif;
     margin-bottom: 50px;
   }
   .main {
+    margin:30px 42%;
     text-align: center; 
-    margin: 10px 42%;
     display: flex;
     flex-wrap: wrap;
-    /* padding: 10px; */
   }
+  
+  .index{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    gap:60px;
+    justify-content: center;
+    margin: 10px 0px 10px;
+    }
+
   .titl-font{
   size: 8px;
   }
@@ -171,9 +179,10 @@ font-family: 'Kiwi Maru', serif;
   color: #333;
 }
 .card-text {
+  margin: 10px;
   color: #777;
   font-size: 14px;
-  line-height: 0.1;
+  line-height: 1.1;
 }
 .card-link {
   text-align: center;
@@ -182,7 +191,7 @@ font-family: 'Kiwi Maru', serif;
 }
 .card-link a {
   text-decoration: none;
-  color: #0bd;
+  color: rgb(119, 65, 34);
   margin: 0 10px;
 }
 
