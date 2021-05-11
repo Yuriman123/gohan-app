@@ -7,7 +7,9 @@
 
       <section class="card">
          <div class="top-card"><td><%= l tweet.created_at,format: :short %></td></div>
+       <%=link_to tweet_path(tweet.id) do %>
          <%= image_tag tweet.image, class: "buy-item-img" if tweet.image.attached? %> 
+      <% end %>
          <h1 class="card-title"> <%= tweet.title%> </h1>
          <p class="card-text">食材: <%= tweet.catch_copy%></p>
       <div class="card-link">
