@@ -1,9 +1,28 @@
  <header class="jumbotron">
     <div class="titlefont">
       <p class="font-a">
+          <div class="yoko-styl">
+    
+
+          <div class="devic"> 
+         <h5><%= image_tag "chawan.png", class:"img-a" %> <%=link_to 'GOHAN',root_path, class:"dezin-a" %> </h5>
+
+          <% if current_user %> 
+             <p class="font-a">
+              <%=link_to 'ログアウト', destroy_user_session_path, method: :delete, class:"dezin" %> </div></p>
+          <% else %> 
+               <p class="font-a">
+                <%=link_to 'ログイン', user_session_path, class:"dezin" %> </p>
+               <p class="font-a">
+               <%=link_to '新規登録', new_user_registration_path, class:"dezin" %>  </p>
+          <%end%>
+      </div>
+      </div> 
+
         <div class="title">
         <div class="font-a">
-            <h1 class="font_test"> 今日は何食べた？</h1> </p>
+            <h1 class="font_test" style="margin-left:aut;"> 
+             <%=link_to '今日は何食べた？',root_path, class:"font_test" %></h1> </p>
           </div>
           <% if current_user %> 
           <div class="text-white-75">こんにちは、 <%= current_user.nickname %>   さん
@@ -11,8 +30,9 @@
             <p class="text-white-75  font-weight-light mb-5">今日のレシピをシェアしよう</p>
         </div>
         <div class="font-a">
+          <div class="text-white-75 ">
             <%= link_to '投稿する', new_tweet_path, class:"buttonb" %>
+          </div>
         </div>
     </div>
-
  </header>  

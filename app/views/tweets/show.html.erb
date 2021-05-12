@@ -1,0 +1,11 @@
+   <%= render partial: "hedaer",locals:{ tweet: @tweet}%>
+
+    <div class="content">
+         <%= image_tag @tweet.image, class: "show-item-img" if @tweet.image.attached? %> 
+         <h1 class="card-title"> <%= @tweet.title%> </h1>
+        
+         <p class="card-text">食材: <%= @tweet.catch_copy%></p>
+         <p class="card-text">作り方: <%= @tweet.recipe%></p>
+         <%= link_to 'Twitter', "https://twitter.com/share?url=#{request.url}", title: 'Twitter', target: '_blank' %>
+    </div>
+

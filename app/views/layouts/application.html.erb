@@ -9,32 +9,18 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <div class="yoko-styl">
-    
-
-          <div class="devic"> 
-         <h5><%= image_tag "chawan.png", class:"img-a" %> <%=link_to 'GOHAN',root_path, class:"dezin-a" %> </h5>
-
-          <% if current_user %> 
-             <p class="font-a">
-              <%=link_to 'ログアウト', destroy_user_session_path, method: :delete, class:"dezin" %> </div></p>
-          <% else %> 
-               <p class="font-a">
-                <%=link_to 'ログイン', user_session_path, class:"dezin" %> </p>
-               <p class="font-a">
-               <%=link_to '新規登録', new_user_registration_path, class:"dezin" %>  </p>
-          <%end%>
-      </div>
-      </div> 
      </div>
      
   </head>
 
-  <body>
+      <body>
+        <div class="footerFixed">
+
     <%= yield %>
   
-   <footer>
-     Copyright &copy;2021
-  </footer>
+      <footer>
+        Copyright &copy;2021
+      </footer>
+  </div>
   </body>
 </html>

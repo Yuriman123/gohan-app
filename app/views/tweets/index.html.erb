@@ -6,7 +6,7 @@
  <% @tweets.each do |tweet| %>
 
       <section class="card">
-         <div class="top-card"><td><%= l tweet.created_at,format: :short %></td></div>
+         <div class="top-card"></div>
        <%=link_to tweet_path(tweet.id) do %>
          <%= image_tag tweet.image, class: "buy-item-img" if tweet.image.attached? %> 
       <% end %>
