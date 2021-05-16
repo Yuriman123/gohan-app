@@ -6,6 +6,6 @@
         
          <p class="card-text">食材: <%= @tweet.catch_copy%></p>
          <p class="card-text">作り方: <%= @tweet.recipe%></p>
-         <%= link_to 'Twitter', "https://twitter.com/share?url=#{request.url}", title: 'Twitter', target: '_blank' %>
+         <a href="https://twitter.com/share?url=#{request.url}","><i class="fab fa-twitter"></i>twitter</a>
     </div>
 

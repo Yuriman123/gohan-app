@@ -28,6 +28,7 @@ class TweetsController < ApplicationController
   def destroy
   end
 
+
   private
 
   def tweet_parmas
