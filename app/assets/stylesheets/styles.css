@@ -5,6 +5,8 @@ header{
 .font_test {
   font-size: 40px;    /* 文字サイズ指定 */
   color: #ee9052ea;     /* 文字色指定 */
+  text-align: center;
+  text-decoration: none;
 }
 .title{
   padding: 30px;
@@ -12,6 +14,7 @@ header{
 
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75);
+  text-align: center;
 }
 
 .jumbotron { background:url(bg-mastheada.jpg);
@@ -19,6 +22,11 @@ header{
   background-size:cover;
 }
 
+.backbround{
+  background:url(bg-mastheada.jpg);
+  height: 200px;
+  background-size:cover;
+}
 .dezin{
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -35,6 +43,9 @@ header{
   list-style: none;
 }
 
+.content{
+  text-align: center;
+}
 .img-a{
   width: 25px;
   height: 25px;
@@ -117,6 +128,12 @@ font-family: 'Kiwi Maru', serif;
     width: 300px;
     object-fit: contain;
   }
+  .show-item-img {
+    margin: 30px auto;
+    height: 300px;
+    width: 400px;
+    object-fit: contain;
+  }
 
   .grid {
     display: grid;
@@ -126,20 +143,35 @@ font-family: 'Kiwi Maru', serif;
     margin-bottom: 50px;
   }
   .main {
+    margin:30px 42%;
     text-align: center; 
-    margin: 10px 42%;
     display: flex;
     flex-wrap: wrap;
-    /* padding: 10px; */
   }
+  
+  .index{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    gap:60px;
+    justify-content: center;
+    margin: 10px 0px 10px;
+    }
+
   .titl-font{
   size: 8px;
   }
   .font-cloer{
     color: rgb(180, 93, 22);
   }
-
+  .footerFixed{
+    min-height: 100vh; /* ←コンテンツの高さの最小値＝ブラウザの高さに指定 */
+    position: relative;/* ←相対位置 */
+    padding-bottom: 60px; /* ←フッターの高さを指定 */
+    box-sizing: border-box;
+    /* ↑ヘッダーやフッターを含むすべての要素の高さ＝min-height:100vhになるように指定 */
+}
   footer{
+    position: absolute;
     margin: 20px;
     width: 100vw;
     height: 40px;
@@ -162,7 +194,7 @@ font-family: 'Kiwi Maru', serif;
   border-radius: 30px;
 }
 
-.card-content {
+.content {
 }
 .card-title {
   margin-top: 0px;
@@ -171,9 +203,10 @@ font-family: 'Kiwi Maru', serif;
   color: #333;
 }
 .card-text {
+  margin: 10px;
   color: #777;
   font-size: 14px;
-  line-height: 0.1;
+  line-height: 1.1;
 }
 .card-link {
   text-align: center;
@@ -182,7 +215,7 @@ font-family: 'Kiwi Maru', serif;
 }
 .card-link a {
   text-decoration: none;
-  color: #0bd;
+  color: rgb(119, 65, 34);
   margin: 0 10px;
 }
 
@@ -194,3 +227,7 @@ default: "%Y/%mm/%d %H:%M:%S";
   margin: 15px;
 }
 
+.certer{
+  margin-left: auto;
+  margin-right: auto;
+}

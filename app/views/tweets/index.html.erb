@@ -1,17 +1,20 @@
    <%= render partial: "hedaer",locals:{ tweet: @tweet}%>
 
 
-<div class="main">
+<div class="index">
+
+
 
  <% @tweets.each do |tweet| %>
 
       <section class="card">
-         <div class="top-card"><td><%= l tweet.created_at,format: :short %></td></div>
+         <div class="top-card"><td><%= l tweet.created_at,format: :short %></td></div>       <%=link_to tweet_path(tweet.id) do %>
          <%= image_tag tweet.image, class: "buy-item-img" if tweet.image.attached? %> 
+      <% end %>
          <h1 class="card-title"> <%= tweet.title%> </h1>
          <p class="card-text">食材: <%= tweet.catch_copy%></p>
       <div class="card-link">
-         <a href="http://webcreatorbox.com/about"><i class="fab fa-twitter"></i>twitter</a>
+         <a href="https://twitter.com/share?url=#{request.url}","><i class="fab fa-twitter"></i>twitter</a>
          <a href="http://webcreatorbox.com/"><i class="fab fa-instagram"></i>instagram</a>
       </div>
       </section>
