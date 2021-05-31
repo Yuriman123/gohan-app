@@ -1,3 +1,11 @@
+<h3>・アプリ名<BR></h3>
+GOHAN<BR>
+  <h3>・概要<BR></h3>
+レシピ投稿アプリ、画像を貼り付けて写真投稿をすることができます。<BR>
+    <h3>・制作背景<BR></h3>
+みんなにシェアもできる自分専用料理のメモアプリを作成している<br>
+ 
+					
 
 ## users table
 
@@ -10,7 +18,7 @@
 ### Association
 
 * has_many :tweets
-* has_many :comments
+
 
 ## tweets table
 
@@ -24,17 +32,5 @@
 ### Association
 
 - belongs_to :user
-- has_many :comments
 
-## comments table
 
-| Column      | Type       | Options           |
-|-------------|------------|-------------------|
-| text        | text       | null: false       |
-| tweet       | references | foreign_key: true |
-| user        | references | foreign_key: true |
-
-### Association
-
-- belongs_to :tweet
-- belongs_to :user
