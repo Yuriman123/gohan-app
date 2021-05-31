@@ -4,8 +4,10 @@ GOHAN<BR>
 レシピ投稿アプリ、画像を貼り付けて写真投稿をすることができます。<BR>
     <h3>・制作背景<BR></h3>
 みんなにシェアもできる自分専用料理のメモアプリを作成している<br>
-	    ![Uploading sampl.jpg…]()
-	  
+
+	  ![sampl](https://user-images.githubusercontent.com/76440720/120204067-5cd5d300-c263-11eb-8666-2b3a30f677ce.jpeg)
+![295127f66342a9f92815ed8071cb661a](https://user-images.githubusercontent.com/76440720/120204086-62cbb400-c263-11eb-82fa-2961200efa45.jpeg)
+
 	    
 <br>
 <h3>・本番環境</h3><br>
