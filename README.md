@@ -4,6 +4,7 @@ GOHAN<BR>
 レシピ投稿アプリ、画像を貼り付けて写真投稿をすることができます。<BR>
     <h3>・制作背景<BR></h3>
 みんなにシェアもできる自分専用料理のメモアプリを作成している<br>
+![sampl](https://github.com/Yuriman123/gohan-app/blob/master/sampl.jpg)	    
  
 					
 
