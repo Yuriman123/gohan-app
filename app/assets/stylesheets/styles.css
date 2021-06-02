@@ -231,3 +231,11 @@ default: "%Y/%mm/%d %H:%M:%S";
   margin-left: auto;
   margin-right: auto;
 }
+
+.retern{
+  margin: auto;
+  word-break: normal;
+  width: 300px;
+  background-color:#EEEEEE;
+  padding: 15px 15px;
+}

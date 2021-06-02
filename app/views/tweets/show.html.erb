@@ -5,7 +5,16 @@
          <h1 class="card-title"> <%= @tweet.title%> </h1>
         
          <p class="card-text">食材: <%= @tweet.catch_copy%></p>
-         <p class="card-text">作り方: <%= @tweet.recipe%></p>
+
+         
+         <p class="card-text">作り方:
+          <div class="retern">
+           <%= @tweet.recipe%></p>
+          </div>
          <a href="https://twitter.com/share?url=#{request.url}","><i class="fab fa-twitter"></i>twitter</a>
+         <br>
+          編集      
+          削除
+
     </div>
 
