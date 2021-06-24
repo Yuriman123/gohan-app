@@ -13,8 +13,8 @@
           </div>
          <a href="https://twitter.com/share?url=#{request.url}","><i class="fab fa-twitter"></i>twitter</a>
          <br>
-          編集      
-          削除
+         <%= link_to "削除",  tweet_path(@tweet), method: :delete %>
+
 
     </div>
 

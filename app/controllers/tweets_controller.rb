@@ -1,6 +1,6 @@
 class TweetsController < ApplicationController
   before_action :authenticate_user!,except: [:index, :show]
-  before_action :set_tweet, only: [:show,:edit,:destroy]
+  before_action :set_tweet, only: [:show, :edit]
   
   def index
     @tweets = Tweet.includes(:user).order('created_at DESC')
@@ -22,10 +22,22 @@ class TweetsController < ApplicationController
   def show
   end
 
+  def update
+    if @tweet.update(tweet_params)
+      redirect_to root_path
+    else
+      render :show
+    end
+  end
+
   def edit
   end
 
   def destroy
+    @tweet = Tweet.find(params[:id])
+    @tweet.destroy
+    redirect_to root_path
+
   end
 
 

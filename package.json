@@ -24,9 +24,5 @@
   "devDependencies": {
     "@webpack-cli/generators": "^2.1.0",
     "webpack-dev-server": "^3.11.2"
-  },
-  "scripts": {
-    +    "dev": "webpack --progress",
-    +    "watch": "webpack --progress --watch"
-      }
+  }
 }
