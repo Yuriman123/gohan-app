@@ -70,4 +70,3 @@ module.exports = function(api) {
     ].filter(Boolean)
   }
 }
-// ["@babel/plugin-proposal-private-methods", { "loose": true }]

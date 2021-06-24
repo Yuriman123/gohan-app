@@ -9,7 +9,7 @@
 
           <% if current_user %> 
              <p class="font-a">
-              <%=link_to 'ログアウト', destroy_user_session_path, method: :delete, class:"dezin" %> </div></p>
+              <%=link_to 'ログアウト', destroy_user_session_path, class:"dezin" %> </div></p>
           <% else %> 
                <p class="font-a">
                 <%=link_to 'ログイン', user_session_path, class:"dezin" %> </p>
