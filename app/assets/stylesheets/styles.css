@@ -238,3 +238,8 @@ default: "%Y/%mm/%d %H:%M:%S";
   background-color:#EEEEEE;
   padding: 15px 15px;
 }
+
+.m-lens-container img {
+  max-height: 344px;
+  max-width: 344px;
+}

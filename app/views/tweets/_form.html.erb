@@ -4,11 +4,24 @@
 <%= form_with model: @tweet, local: true do |f|%>
  <%= render 'shared/error_messages', model: f.object %>
   <div class="dexin-a">
+    
+    <div class="content">
+    <div class="m-lens-container">
 
-    <h3><i class="fas fa-camera"></i>
-      <div id="image-list"></div>
-      <%= f.label :image, "写真"%><h6>(必須)</h6></h3>
-      <%= f.file_field :image,class: :image_form %>
+　　　
+     <div id="image-list",style= width: 300px;></div> 
+    
+
+
+      <%= form_with model: @tweet, id: 'new_message', local: true do |f| %>
+
+      <%# <%= image_tag @tweet.image, id: 'image' if @tweet.image.present? %> 
+        <%= f.file_field :image %>
+        <%= f.submit '送信' %>
+      <% end %>
+
+
+   
     </div>
 
 
