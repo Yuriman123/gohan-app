@@ -1,6 +1,5 @@
 <div class="main">
 
-
 <%= form_with model: @tweet, local: true do |f|%>
  <%= render 'shared/error_messages', model: f.object %>
   <div class="dexin-a">
@@ -13,10 +12,8 @@
     
 
 
-      <%= form_with model: @tweet, id: 'new_message', local: true do |f| %>
 
         <%= f.file_field :image %>
-      <% end %>
 
 
    
