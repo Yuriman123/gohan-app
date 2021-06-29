@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener("turbolinks:load", function(){
   if ( document.getElementById('tweet_image')){
     const ImageList = document.getElementById('image-list');
 
