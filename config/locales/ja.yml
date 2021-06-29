@@ -1,6 +1,19 @@
 
 ja:
   activerecord:
+    attributes:
+      user:
+        nickname: ニックネーム
+       
+      tweet:
+        text: テキスト
+        title: タイトル
+        image: 画像
+        recipe: レシピ
+        catch_copy: メイン食材
+      form:
+
+
     errors:
       messages:
         record_invalid: 'バリデーションに失敗しました: %{errors}'
@@ -205,3 +218,4 @@ ja:
       long: "%Y/%m/%d %H:%M"
       short: "%m/%d %H:%M"
     pm: 午後
+    
